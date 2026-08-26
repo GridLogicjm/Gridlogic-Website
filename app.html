@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TODO: swap in the app's real name once decided — currently referred to generically -->
+<title>Personal Finance App (Coming Soon) | Grid Logic</title>
+<meta name="description" content="Grid Logic is building a personal finance tracking app to help you budget, track spending, and reach your goals. Coming soon on iOS and Google Play. Join the waitlist.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="app">
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Grid Logic"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-page="home">Home</a></li>
+      <li><a href="about.html" data-page="about">About</a></li>
+      <li><a href="services.html" data-page="services">Services</a></li>
+      <li><a href="app.html" data-page="app">App</a></li>
+      <li><a href="contact.html" data-page="contact">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta" style="margin-left:8px">Book a Consultation</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-page="home">Home</a>
+  <a href="about.html" data-page="about">About</a>
+  <a href="services.html" data-page="services">Services</a>
+  <a href="app.html" data-page="app">App</a>
+  <a href="contact.html" data-page="contact">Contact</a>
+  <a href="contact.html" style="color:var(--green);font-weight:700;border:none;margin-top:10px">→ Book a Free Consultation</a>
+</div>
+
+<main>
+
+  <!-- APP HERO -->
+  <section class="app-hero grid-bg">
+    <div class="container">
+      <div class="app-hero-inner">
+        <div>
+          <div class="hero-badge">Coming Soon</div>
+          <h1>Your Money, <em style="font-style:normal;color:var(--green-accent)">Finally</em> Organized.</h1>
+          <p class="hero-sub">We're building a personal finance tracking app to help you budget, track spending, and reach your goals — the same systems thinking we bring to businesses, now for your own money.</p>
+          <div class="platform-badges">
+            <span class="platform-badge"><span class="dot"></span> Coming to iOS</span>
+            <span class="platform-badge"><span class="dot"></span> Coming to Google Play</span>
+            <span class="platform-badge"><span class="dot"></span> Also a Web App</span>
+          </div>
+          <div class="hero-actions" style="margin-top:20px">
+            <a class="btn btn-primary btn-lg" href="#waitlist">Join the Waitlist →</a>
+          </div>
+        </div>
+        <div>
+          <div class="phone-mockup fade-in">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-greeting">Total Balance</div>
+              <div class="phone-balance">$248,600<span>+4.2%</span></div>
+              <div class="phone-chart">
+                <div class="bar" style="height:35%"></div>
+                <div class="bar" style="height:55%"></div>
+                <div class="bar" style="height:40%"></div>
+                <div class="bar" style="height:70%"></div>
+                <div class="bar" style="height:50%"></div>
+                <div class="bar" style="height:85%"></div>
+                <div class="bar" style="height:60%"></div>
+              </div>
+              <div class="phone-cats">
+                <div class="phone-cat">
+                  <div class="phone-cat-icon" style="background:rgba(0,176,80,.18)">🛒</div>
+                  <div class="phone-cat-name">Groceries</div>
+                  <div class="phone-cat-amt">$12,400</div>
+                </div>
+                <div class="phone-cat">
+                  <div class="phone-cat-icon" style="background:rgba(88,166,255,.18)">🚗</div>
+                  <div class="phone-cat-name">Transport</div>
+                  <div class="phone-cat-amt">$6,800</div>
+                </div>
+                <div class="phone-cat">
+                  <div class="phone-cat-icon" style="background:rgba(255,189,46,.18)">💡</div>
+                  <div class="phone-cat-name">Utilities</div>
+                  <div class="phone-cat-amt">$9,150</div>
+                </div>
+                <div class="phone-cat">
+                  <div class="phone-cat-icon" style="background:rgba(0,176,80,.18)">🎯</div>
+                  <div class="phone-cat-name">Savings Goal</div>
+                  <div class="phone-cat-amt">68%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:44px">
+        <div class="section-label" style="justify-content:center">What to Expect</div>
+        <h2 style="color:var(--charcoal);margin-bottom:12px">Simple, Practical, Personal Finance</h2>
+        <p style="max-width:520px;margin:0 auto;font-size:.93rem">No spreadsheets, no complexity — just a clear picture of your money.</p>
+      </div>
+      <div class="app-features">
+        <div class="app-feature fade-in">
+          <div class="service-icon">📊</div>
+          <h3>Track Every Dollar</h3>
+          <p>See exactly where your money goes with automatic categorization and clear, simple reports.</p>
+        </div>
+        <div class="app-feature fade-in">
+          <div class="service-icon">🎯</div>
+          <h3>Budget With Confidence</h3>
+          <p>Set budgets by category and get notified before you overspend.</p>
+        </div>
+        <div class="app-feature fade-in">
+          <div class="service-icon">📈</div>
+          <h3>Reach Your Goals</h3>
+          <p>Set savings goals and track your progress — built by the same team that helps businesses master their numbers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST -->
+  <section class="section" style="background:var(--off)" id="waitlist">
+    <div class="container">
+      <div class="waitlist-box">
+        <h3>Be the First to Know</h3>
+        <p>Join the waitlist and we'll let you know the moment the app is ready to download.</p>
+        <form id="waitlistForm" onsubmit="handleFormSubmit(event,'waitlistForm','waitlistSuccess')">
+          <input type="hidden" name="access_key" value="1b878998-fc58-48d2-9be1-063ecc3f9d35">
+          <input type="hidden" name="subject" value="New Finance App Waitlist Signup — Grid Logic Website">
+          <div class="waitlist-row">
+            <input type="email" name="email" placeholder="you@email.com" required>
+            <button type="submit" class="btn btn-primary">Join Waitlist →</button>
+          </div>
+        </form>
+        <div class="form-success" id="waitlistSuccess">✓ You're on the list! We'll be in touch when it's ready.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html"><img src="assets/logo.png" alt="Grid Logic"></a>
+        <p>Practical automation, digital systems, and business &amp; accounting consulting for small businesses across Jamaica, the Caribbean, and beyond.</p>
+        <p><a href="mailto:info@gridlogicjm.com" style="color:var(--green-accent);text-decoration:none;font-size:.85rem">info@gridlogicjm.com</a></p>
+        <p style="margin-top:4px"><a href="tel:+18763108557" style="color:rgba(255,255,255,.4);text-decoration:none;font-size:.84rem">876-310-8557</a></p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul class="footer-links">
+          <li><a href="services.html">Workflow Automation</a></li>
+          <li><a href="services.html">Reconciliation &amp; Bookkeeping</a></li>
+          <li><a href="services.html">Business &amp; Accounting Consulting</a></li>
+          <li><a href="services.html">Website Launches</a></li>
+          <li><a href="services.html">Startup Digital Setup</a></li>
+          <li><a href="services.html">Reporting &amp; AI Tools</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About Alex Henry</a></li>
+          <li><a href="app.html">Finance App</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="https://www.instagram.com/gridlogicjm" target="_blank">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@gridlogicjm" target="_blank">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Grid Logic Jamaica. All rights reserved.</p>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <span class="footer-divider">|</span>
+        <a href="mailto:info@gridlogicjm.com">info@gridlogicjm.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
