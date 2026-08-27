@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Grid Track by Grid Logic</title>
+<meta name="description" content="Privacy Policy for Grid Track, the personal finance tracking app by Grid Logic — what we collect, why, and how it's protected.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.prose{max-width:760px;margin:0 auto}
+.prose h2{color:var(--charcoal);font-size:1.4rem;margin:40px 0 14px}
+.prose h2:first-child{margin-top:0}
+.prose h3{color:var(--charcoal);font-size:1.05rem;margin:24px 0 10px}
+.prose p{margin-bottom:14px;font-size:.93rem}
+.prose ul{margin:0 0 14px 1.2em}
+.prose li{font-size:.93rem;color:var(--text-mid);line-height:1.75;margin-bottom:6px}
+.prose strong{color:var(--charcoal)}
+.prose .updated{color:var(--text-light);font-size:.82rem;margin-bottom:32px;display:block}
+</style>
+</head>
+<body data-page="privacy">
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Grid Logic"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-page="home">Home</a></li>
+      <li><a href="about.html" data-page="about">About</a></li>
+      <li><a href="services.html" data-page="services">Services</a></li>
+      <li><a href="app.html" data-page="app">App</a></li>
+      <li><a href="contact.html" data-page="contact">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta" style="margin-left:8px">Book a Consultation</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-page="home">Home</a>
+  <a href="about.html" data-page="about">About</a>
+  <a href="services.html" data-page="services">Services</a>
+  <a href="app.html" data-page="app">App</a>
+  <a href="contact.html" data-page="contact">Contact</a>
+  <a href="contact.html" style="color:var(--green);font-weight:700;border:none;margin-top:10px">→ Book a Free Consultation</a>
+</div>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <div class="section-label" style="justify-content:center;color:rgba(255,255,255,.4)">Legal</div>
+      <h1>Grid Track Privacy Policy</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="prose">
+        <span class="updated">Last updated: August 26, 2026</span>
+
+        <p>Grid Track is built by Grid Logic. This policy explains what information the app collects, why, and how it's protected. We've written it to describe exactly what the app actually does — not a generic template.</p>
+
+        <h2>The short version</h2>
+        <p>Grid Track is offline-first: your accounts, transactions, budgets, and goals are stored on your own device first. If you create an account, that same data is also synced to our backend (Supabase) so it stays available across your devices — but it's never sold, never used for advertising, and never shared with anyone outside your own household.</p>
+
+        <h2>Information we collect</h2>
+        <p><strong>Account information.</strong> If you create an account to enable cloud sync, we collect the email address (or phone number, if you sign up that way) you register with, handled through our authentication provider, Supabase.</p>
+        <p><strong>Financial data you enter.</strong> Everything you add to the app — transactions, account balances, budgets, savings goals, bills, recurring income, and the categories and notes you attach to them — is stored so the app can function. This can include merchant names, amounts, dates, and any free-text notes or location text you choose to type in yourself; the app does not access your device's GPS or location services.</p>
+        <p><strong>Receipt photos, only when you use receipt scanning.</strong> If you use the receipt-scanning feature, the photo you take is sent to Anthropic (the maker of Claude, the AI model that reads the receipt) to extract the merchant, amount, date, and line items. The photo is used only to process that one receipt and is not stored by us afterward.</p>
+        <p><strong>Household member profiles.</strong> If you add other household members (a partner, a child) who don't sign in themselves, we store only the name and avatar color/photo you give them — not a separate account or contact information for them.</p>
+        <p><strong>What we don't collect.</strong> We don't use advertising or analytics SDKs of any kind. We don't track your location. We don't read your contacts, photos, or other apps. We don't sell your data to anyone, for any reason.</p>
+
+        <h2>How your data is stored and protected</h2>
+        <ul>
+          <li>On your device, your financial data is stored in a local encrypted database (on Android, iOS, macOS, Windows, and Linux). On the web, it's protected by your browser's own storage sandbox.</li>
+          <li>You can lock the app with a PIN or biometric unlock (fingerprint/Face ID) — biometric data itself never leaves your device or reaches us; the app only receives a yes/no confirmation from your device's operating system.</li>
+          <li>Data sent to our servers travels over an encrypted (TLS) connection.</li>
+          <li>Our backend uses row-level security so that only members of your own household can ever read or write your household's data — not other Grid Track users, and not us, outside of what's needed to operate the service.</li>
+        </ul>
+
+        <h2>Who we share data with</h2>
+        <ul>
+          <li><strong>Supabase</strong> — our backend infrastructure provider, which stores your account and synced financial data.</li>
+          <li><strong>Anthropic</strong> — receives a receipt photo only at the moment you use receipt scanning, solely to extract its contents.</li>
+        </ul>
+        <p>We don't share your data with advertisers, data brokers, or any other third party.</p>
+
+        <h2>Your choices</h2>
+        <ul>
+          <li><strong>Use the app without an account.</strong> Grid Track works fully offline; you only need to create an account if you want your data synced across devices.</li>
+          <li><strong>Delete your local data.</strong> Settings → Data → "Wipe local data" permanently erases everything stored on that device.</li>
+          <li><strong>Delete your account and cloud data.</strong> Self-service account deletion isn't built into the app yet — email us at <a href="mailto:info@gridlogicjm.com">info@gridlogicjm.com</a> and we'll delete your account and all associated data.</li>
+        </ul>
+
+        <h2>Children</h2>
+        <p>Grid Track isn't directed at children, and we don't knowingly collect account information from anyone under 13. A household's adult user may add a child as a household <em>member profile</em> (name and avatar only, no login), which isn't a separate account and isn't used to identify or contact that child.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If this policy changes in a way that affects how your data is handled, we'll update the date at the top and, for material changes, let you know in the app.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this policy or your data: <a href="mailto:info@gridlogicjm.com">info@gridlogicjm.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html"><img src="assets/logo.png" alt="Grid Logic"></a>
+        <p>Practical automation, digital systems, and business &amp; accounting consulting for small businesses across Jamaica, the Caribbean, and beyond.</p>
+        <p><a href="mailto:info@gridlogicjm.com" style="color:var(--green-accent);text-decoration:none;font-size:.85rem">info@gridlogicjm.com</a></p>
+        <p style="margin-top:4px"><a href="tel:+18763108557" style="color:rgba(255,255,255,.4);text-decoration:none;font-size:.84rem">876-310-8557</a></p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul class="footer-links">
+          <li><a href="services.html">Workflow Automation</a></li>
+          <li><a href="services.html">Reconciliation &amp; Bookkeeping</a></li>
+          <li><a href="services.html">Business &amp; Accounting Consulting</a></li>
+          <li><a href="services.html">Website Launches</a></li>
+          <li><a href="services.html">Startup Digital Setup</a></li>
+          <li><a href="services.html">Reporting &amp; AI Tools</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About Alex Henry</a></li>
+          <li><a href="app.html">Grid Track</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="https://www.instagram.com/gridlogicjm" target="_blank">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@gridlogicjm" target="_blank">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Grid Logic Jamaica. All rights reserved.</p>
+      <div>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <span class="footer-divider">|</span>
+        <a href="mailto:info@gridlogicjm.com">info@gridlogicjm.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
